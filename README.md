@@ -30,7 +30,9 @@ allprojects {
 defChecked 表示默认选中 numbers 表示几个按钮 目前 支持2-4个按钮 另外还有字体颜色，字体大小等属性
 ``` java
   //切记顶层布局中需要该代码
-  xmlns:menu="http://schemas.android.com/apk/res-auto"
+  <LinearLayout
+      xmlns:menu="http://schemas.android.com/apk/res-auto"
+      ...>
   
    <futurenavi.libbtnmenu.BtnMenuLayout
         android:id="@+id/btnMenu"
@@ -59,7 +61,7 @@ defChecked 表示默认选中 numbers 表示几个按钮 目前 支持2-4个按�
 
 
 ### 实现思路 
-由于时间关系，具体的实现大家可以看**源码**，其实非常的简单，有时间在回来书写思路。
+由于时间关系，具体的实现大家可以看***源码***，其实非常的简单，有时间在回来书写思路。
  
 
   <!-- [1]: http://oddbiem8l.bkt.clouddn.com/mvp.png -->
