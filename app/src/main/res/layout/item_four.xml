@@ -19,7 +19,7 @@
     <futurenavi.libbtnmenu.BtnMenuLayout
         android:id="@+id/btn_menu41"
         android:layout_width="match_parent"
-        android:layout_height="38dp"
+        android:layout_height="32dp"
         menu:defChecked="1"
         menu:numbers="9"
         menu:textSize="12sp"/>
@@ -33,7 +33,7 @@
     <futurenavi.libbtnmenu.BtnMenuLayout
         android:id="@+id/btn_menu42"
         android:layout_width="match_parent"
-        android:layout_height="38dp"
+        android:layout_height="34dp"
         menu:defChecked="2"
         menu:numbers="4"
         menu:textSize="12sp"/>
@@ -47,7 +47,7 @@
     <futurenavi.libbtnmenu.BtnMenuLayout
         android:id="@+id/btn_menu43"
         android:layout_width="match_parent"
-        android:layout_height="38dp"
+        android:layout_height="36dp"
         menu:defChecked="3"
         menu:numbers="4"
         menu:textSize="12sp"/>
