@@ -1,6 +1,6 @@
 # MBtnMenu
 
-一款很简单的自定义菜单,如图：
+一款简单使用的自定义菜单，具体如图：
 
 <!-- ![IOS分分种搞定的效果](http://okbrselg1.bkt.clouddn.com/iamge/ios_menu.png =200x) -->
 ![Android自定义的效果](http://okbrselg1.bkt.clouddn.com/image/android_menu.png )
@@ -62,6 +62,9 @@ defChecked 表示默认选中 numbers 表示几个按钮 目前 支持2-4个按�
 
 ### 实现思路 
 由于时间关系，具体的实现大家可以看***源码***，其实非常的简单，有时间在回来书写思路。
+PS：美工设计这个菜单后，IOS分分钟搞定，Android还要自定义....现在好了，也能分分钟搞定了
+（也可能是我造轮子了，不过我确实木有发现有）。
+有不足的地方还请多多指教。
  
 
   <!-- [1]: http://oddbiem8l.bkt.clouddn.com/mvp.png -->
