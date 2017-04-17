@@ -1,8 +1,6 @@
 # MBtnMenu
 
- ### 什么是MBtnMenu
-一款很简单的自定义菜单，字面意思就能理解，使用button自定义的菜单
-
+一款很简单的自定义菜单,如图：
 
 <!-- ![IOS分分种搞定的效果](http://okbrselg1.bkt.clouddn.com/iamge/ios_menu.png =200x) -->
 ![Android自定义的效果](http://okbrselg1.bkt.clouddn.com/image/android_menu.png )
@@ -25,6 +23,37 @@ allprojects {
     dependencies {
 	       compile 'com.github.android-pf:MBtnMenu:v2.0'
 	}
+```
+
+## Step 3. 在具体使用的xml中,其中顶层布局中需要写 ： xmlns:menu="http://schemas.android.com/apk/res-auto"
+## defChecked 表示默认选中 numbers 表示几个按钮 目前 支持2-4个按钮 另外还有字体颜色，字体大小等属性
+``` java
+  切记顶层布局中需要该代码
+  xmlns:menu="http://schemas.android.com/apk/res-auto"
+  
+   <futurenavi.libbtnmenu.BtnMenuLayout
+        android:id="@+id/btn_menu42"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        menu:defChecked="2"
+        menu:numbers="4"
+        menu:textSize="12sp"/>
+```
+
+## Step 4. 在代码中使用
+ 
+``` java
+        btnMenu = (BtnMenuLayout) findViewById(R.id.btnMenu);
+ 
+      
+        btnMenu.addBtnNames("全部", "未开始", "进行中", "已结束").menuClicks(new  BtnMenuLayout.CallBack(){
+            @Override
+            public void onClicks(Button btns) {
+                //具体的处理方案
+            }
+        });
+        //需要具体个数时，可再次调用addBtnNames方法
+         btnMenu.addBtnNames("全部(21)", "未开始(10)", "进行中(10)", "已结束(1)").menuClicks(call);
 ```
 
 ### model-view-presenter间的关系

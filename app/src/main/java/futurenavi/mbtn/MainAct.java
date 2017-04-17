@@ -46,7 +46,12 @@ public class MainAct extends AppCompatActivity {
         btnMenu21 = (BtnMenuLayout) findViewById(R.id.btn_menu21);
         btnMenu22 = (BtnMenuLayout) findViewById(R.id.btn_menu22);
         btnMenu21.addBtnNames("全部(21)", "未开始(10)", "进行中(10)", "已结束(1)").menuClicks(call);
-        btnMenu22.addBtnNames("全部", "未开始", "进行中", "已结束").menuClicks(call);
+        btnMenu22.addBtnNames("全部", "未开始", "进行中", "已结束").menuClicks(new  BtnMenuLayout.CallBack(){
+            @Override
+            public void onClicks(Button btns) {
+                //具体的处理方案
+            }
+        });
     }
 
     BtnMenuLayout.CallBack call = new BtnMenuLayout.CallBack() {
