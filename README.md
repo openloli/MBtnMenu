@@ -4,8 +4,28 @@
 一款很简单的自定义菜单，字面意思就能理解，使用button自定义的菜单
 
 
-![IOS分分种搞定的效果](http://okbrselg1.bkt.clouddn.com/iamge/ios_menu.png =200x)
-![Android自定义的效果](http://okbrselg1.bkt.clouddn.com/image/android_menu.png =200x)
+<!-- ![IOS分分种搞定的效果](http://okbrselg1.bkt.clouddn.com/iamge/ios_menu.png =200x) -->
+![Android自定义的效果](http://okbrselg1.bkt.clouddn.com/image/android_menu.png )
+
+### 使用步骤：
+## Step 1. 在Project build.gradle 文件中添加以下代码
+``` java
+allprojects {
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
+		}
+	}
+
+```
+
+## Step 2. 在APP build.gradle 文件中添加以下代码
+ 
+``` java
+    dependencies {
+	       compile 'com.github.android-pf:MBtnMenu:v2.0'
+	}
+```
 
 ### model-view-presenter间的关系
 mvp模式中的m层被完全分离出来，不会跟model层有任何直接的交互。而是通过接口与对应的presenter进行绑定。在view层中实现接口直接使用接口中的数据进行显示。
